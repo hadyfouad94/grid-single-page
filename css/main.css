@@ -1,0 +1,549 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --arvo-font: "Arvo", sans-serif;
+  --sans-font: "Open Sans", sans-serif;
+  --montserrat-font: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 10% auto 0 auto;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Landing Landing Landing Landing Landing Landing LearnMore LearnMore LearnMore LearnMore LearnMore LearnMore"
+    "Landing Landing Landing Landing Landing Landing LearnMore LearnMore LearnMore LearnMore LearnMore LearnMore"
+    "OurBrand OurBrand OurBrand IMAC IMAC IMAC IMAC IMAC IMAC ICloud ICloud ICloud"
+    "OurBrand OurBrand OurBrand IMAC IMAC IMAC IMAC IMAC IMAC ICloud ICloud ICloud"
+    "Games Games Games BestChoice BestChoice BestChoice BestChoice BestChoice BestChoice ICloud ICloud ICloud"
+    "Games Games Games BestChoice BestChoice BestChoice BestChoice BestChoice BestChoice ICloud ICloud ICloud"
+    "Twitter Twitter Twitter MuchBetter MuchBetter MuchBetter Vision Vision Vision Vision Vision Vision";
+}
+
+/************card 1 (row 1 - col 1) ***************/
+.Landing {
+  background-color: #ffffff;
+  grid-area: Landing;
+}
+.landing-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+.landing-content-left {
+  width: 40%;
+}
+.landing-content-left h3 {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(159, 163, 167);
+}
+.landing-content-left .para1 {
+  margin-block: 15%;
+  font-family: var(--arvo-font);
+  font-weight: 400;
+  line-height: 32px;
+  font-style: normal;
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+.landing-content-left .para2 {
+  font-family: var(--sans-font);
+  font-weight: 400;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(159, 163, 167);
+}
+.landing-content-right {
+  width: 40%;
+}
+
+.landing-content-right img {
+  width: 100%;
+  display: block;
+}
+/****************card2 (row 1 -col2) ***************/
+.LearnMore {
+  background-color: #f7f8f9;
+  grid-area: LearnMore;
+  text-align: center;
+}
+.LearnMore .learn {
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(159, 163, 167);
+}
+.LearnMore .maintxt {
+  margin-block: 5%;
+  font-family: var(--arvo-font);
+  font-weight: 400;
+  line-height: 60px;
+  font-style: normal;
+  font-size: 48px;
+  color: rgb(51, 51, 51);
+}
+
+.LearnMore a {
+  font-family: var(--sans-font);
+  font-weight: 400;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(39, 185, 194);
+}
+/****************card3 (row 2 -col1) ***************/
+.OurBrand {
+  background-color: #f05638;
+  grid-area: OurBrand;
+  text-align: center;
+}
+.OurBrand img {
+  width: 100%;
+  display: block;
+}
+.OurBrand p {
+  margin-block: 10%;
+  font-family: var(--arvo-font);
+  font-weight: 700;
+  line-height: 32px;
+  font-style: normal;
+  font-size: 22px;
+  color: white;
+}
+.OurBrand a {
+  text-decoration: none;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(255, 200, 10);
+}
+.OurBrand span {
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(255, 200, 10);
+}
+/****************card4 (row 2 -col2) ***************/
+.IMAC {
+  background-color: #ffffff;
+  grid-area: IMAC;
+}
+.IMAC .container {
+  margin-bottom: 0;
+}
+.IMAC-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.IMAC-content-left {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  width: 40%;
+  height: 100%;
+}
+.IMAC-content-left h3 {
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(159, 163, 167);
+}
+.IMAC-content-left p {
+  margin-block: 15%;
+  font-family: var(--arvo-font);
+  font-weight: 400;
+  line-height: 32px;
+  font-style: normal;
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+.IMAC-content-left img {
+  width: 80%;
+  display: block;
+}
+.IMAC-content-right {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  width: 40%;
+}
+.IMAC-content-right p {
+  font-family: var(--sans-font);
+  font-weight: 400;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(39, 185, 194);
+}
+.IMAC-content-right span {
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(39, 185, 194);
+}
+.IMAC-content-right a {
+  margin-top: 15%;
+  text-decoration: none;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(39, 185, 194);
+}
+
+/**************card5 (row2-col3) ****************/
+.ICloud {
+  background-color: #8f76bc;
+  grid-area: ICloud;
+  height: 100%;
+}
+.iclourd-wrapper {
+  height: 85%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icloud-first {
+  height: 20rem;
+  width: 100%;
+  background-color: #7a61a7;
+  border-radius: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flex-logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-self: center;
+  width: 25%;
+  border-radius: 30px;
+  background-color: red;
+  overflow: hidden;
+}
+.flex-logo img {
+  width: 15px;
+  height: 20px;
+}
+.flex-logo p {
+  font-size: 10px;
+  line-height: 23px;
+  font-weight: 700;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 23px;
+  font-style: normal;
+  font-size: 10px;
+  color: white;
+}
+.icloud-img {
+  width: 50%;
+}
+.icloud-img img {
+  width: 100%;
+  display: block;
+}
+.last-logo p {
+  margin-bottom: 5%;
+  font-family: var(--montserrat-font);
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+  font-size: 12px;
+  color: white;
+}
+.cloud-header {
+  margin-block: 10%;
+}
+.cloud-header h1 {
+  font-family: var(--arvo-font);
+  font-weight: 700;
+  line-height: 36px;
+  font-style: normal;
+  font-size: 32px;
+  color: white;
+}
+.icloud-para {
+  width: 70%;
+  text-align: center;
+}
+.icloud-para p {
+  font-family: var(--sans-font);
+  font-weight: 400;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+}
+.icloud-learn {
+  width: 60%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icloud-learn a {
+  border-radius: 3em;
+  background-color: #ffc80a;
+  color: black;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 12px;
+  color: black;
+}
+/******************card6 (row3-col2)**************/
+
+.BestChoice {
+  background-color: #93b6b7;
+  background-image: url(./../IMG/ux.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: BestChoice;
+}
+
+.BestChoice .lefthead {
+  width: 13%;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 5%;
+  color: white;
+  background-color: #fa684f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BestChoice .lefthead p {
+  letter-spacing: 2px;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+  font-size: 8px;
+  color: white;
+}
+.BestChoice-header {
+  margin-block: 5%;
+  text-align: center;
+  font-family: var(--arvo-font);
+  font-weight: 700;
+  line-height: 32px;
+  font-style: normal;
+  font-size: 22px;
+  color: white;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+.BestChoice img {
+  width: 80%;
+}
+/******************card6 (row3-col1)**************/
+.Games {
+  background-color: #f7f8f9;
+  grid-area: Games;
+  text-align: center;
+}
+.Games .container {
+  width: 75%;
+}
+.Games img {
+  width: 100%;
+  display: block;
+}
+.Games h2 {
+  margin-block: 10%;
+  font-family: var(--arvo-font);
+  font-weight: 400;
+  line-height: 32px;
+  font-style: normal;
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+
+.Games a {
+  text-decoration: none;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(39, 185, 194);
+}
+.Games span {
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 26px;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(39, 185, 194);
+}
+
+/******************card7 (row4-col1)**************/
+.Twitter {
+  background-color: #38d5f4;
+  grid-area: Twitter;
+}
+.Twitter .container {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.twitter-center {
+  width: 90%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #35cfed;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.twitter-center img {
+  width: 20%;
+  margin-bottom: 5%;
+}
+.twitter-center p {
+  font-size: 30px;
+  font-family: var(--arvo-font);
+  font-weight: 400;
+  line-height: 32px;
+  font-style: normal;
+  font-size: 22px;
+  color: white;
+}
+/********* card8 (row3-col2) *****************/
+.MuchBetter {
+  background-color: #f7f8f9;
+  grid-area: MuchBetter;
+}
+.better-content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.popular {
+  width: 30%;
+  border-radius: 5px;
+  background-color: #7bc424;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+.popular p {
+  letter-spacing: 2px;
+  font-family: var(--sans-font);
+  font-weight: 700;
+  line-height: 20px;
+  font-style: normal;
+  font-size: 8px;
+  color: white;
+}
+.muchbet {
+  font-family: var(--arvo-font);
+  font-weight: 400;
+  line-height: 32px;
+  font-style: normal;
+  font-size: 22px;
+  color: rgb(51, 51, 51);
+}
+/****************card9 (row3-col3)********************/
+.Vision {
+  background-color: #2c2c2c;
+  grid-area: Vision;
+}
+
+.vision-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+.left-vision {
+  width: 20%;
+}
+
+.left-vision img {
+  width: 100%;
+  display: block;
+  margin-left: 30%;
+}
+
+.right-vision p {
+  font-family: var(--arvo-font);
+  font-weight: 400;
+  line-height: 32px;
+  font-style: normal;
+  font-size: 22px;
+  color: white;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 992px) {
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px;
+    grid-template-areas:
+      "LearnMore LearnMore LearnMore LearnMore LearnMore LearnMore"
+      "Landing Landing Landing Landing Landing Landing"
+      "OurBrand OurBrand OurBrand Games Games Games"
+      "IMAC IMAC IMAC IMAC IMAC IMAC"
+      "Twitter Twitter Twitter ICloud ICloud ICloud"
+      "BestChoice  BestChoice BestChoice ICloud ICloud ICloud "
+      "MuchBetter MuchBetter MuchBetter MuchBetter MuchBetter MuchBetter "
+      "Vision Vision Vision Vision Vision Vision ";
+  }
+}
